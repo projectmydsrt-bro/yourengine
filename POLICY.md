@@ -1,80 +1,54 @@
-![Policy](https://img.shields.io/badge/Project-Policy-blue.svg)
+# Project Policy for dsrt.js
 
-# Project Policy – dsrt.js
+## Overview
 
-This document defines the governance, release, and dependency policies for **dsrt.js**.  
-It ensures consistency, stability, and security for both maintainers and contributors.
-
----
-
-## 1. Release Policy
-- **Semantic Versioning (SemVer)** is used: `MAJOR.MINOR.PATCH`.
-- **Patch (x.y.z+1)** → Bug fixes or minor internal improvements.  
-- **Minor (x.y+1.0)** → New features added in a backward-compatible way.  
-- **Major (x+1.0.0)** → Breaking changes, announced in advance.  
-- Pre-releases are tagged as `alpha`, `beta`, or `rc`.
-
-### Release Process
-1. All changes must pass CI (build, lint, test).  
-2. A maintainer approves and merges into `main`.  
-3. GitHub Actions creates release notes and publishes to NPM.  
-4. Tags are pushed automatically (`vX.Y.Z`).  
+This document outlines the official policies for the dsrt.js project, including release management, dependencies, usage, and contribution guidelines. Adherence ensures the project remains secure, maintainable, and professional.
 
 ---
 
-## 2. Dependency Policy
-- Dependencies must be:
-  - Actively maintained  
-  - MIT-compatible (or equally permissive)  
-  - Lightweight and secure  
-- Dependencies will be updated monthly using Dependabot.  
-- Deprecated or insecure dependencies are removed immediately.  
+## Versioning Policy
+
+- dsrt.js follows [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
+  - **MAJOR**: Incompatible API changes
+  - **MINOR**: New features, backward-compatible
+  - **PATCH**: Bug fixes, backward-compatible
+- All releases are documented in the GitHub [Releases](https://github.com/projectmydsrt-bro/dsrt.js/releases) page.
 
 ---
 
-## 3. Governance Policy
-- **Core maintainers** are responsible for roadmap, releases, and final decisions.  
-- **Contributors** may submit Pull Requests, which must:
-  - Pass automated checks  
-  - Be reviewed by at least one maintainer  
-  - Follow [Contributing Guidelines](./CONTRIBUTING.md)  
-- Disputes are resolved by maintainer majority vote.  
+## Dependency Policy
+
+- Only trusted and actively maintained dependencies are allowed.
+- Dependencies must be checked for security vulnerabilities before adding.
+- Updates to dependencies must pass CI/CD tests and security audits.
+- Deprecated or unmaintained dependencies should be replaced promptly.
 
 ---
 
-## 4. Security Policy
-All vulnerabilities are handled under the [Security Policy](./SECURITY.md).  
-Critical issues may result in an immediate out-of-band release.  
+## Usage Policy
+
+- dsrt.js is free to use under the MIT License.
+- Users should always use the latest stable release for production.
+- Contributions to dsrt.js must follow security best practices and coding standards.
 
 ---
 
-## 5. Roadmap & Transparency
-- Roadmap is tracked in `ROADMAP.md` or GitHub Projects.  
-- Deprecated features will be announced **at least one minor release** in advance.  
-- Experimental features are marked as such until stable.  
+## Release Policy
+
+- Major releases require approval by core maintainers.
+- Minor and patch releases can be created via automated CI/CD workflow after passing tests.
+- Each release must include proper changelog entries describing new features, fixes, or breaking changes.
 
 ---
 
-## 6. Documentation Policy
-- All public APIs must include JSDoc/TypeDoc comments.  
-- Documentation is generated automatically and published to `/docs`.  
-- Examples must be provided for new major features.  
+## Security Policy
+
+- Security vulnerabilities should be reported according to [SECURITY.md](SECURITY.md).
+- Contributors must avoid including secrets, passwords, or unsafe code in commits or pull requests.
 
 ---
 
-## 7. Communication Channels
-- 📌 GitHub Issues → Bug reports & feature requests  
-- 💬 GitHub Discussions → Community proposals & Q&A  
-- 🔒 Security Email → Private vulnerability reports (`security@dsrt.dev`)  
+## Compliance
 
----
-
-## 🔗 Related Documents
-- 📜 [License](./LICENSE)  
-- 🔒 [Security Policy](./SECURITY.md)  
-- 🤝 [Contributing Guide](./CONTRIBUTING.md)  
-- 📏 [Code of Conduct](./CODE_OF_CONDUCT.md)  
-
----
-
-© DSRT — Digital Smart Revise Technology. All rights reserved.
+- All contributors must follow the [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md).
+- Failure to comply with these policies may result in rejection of contributions or removal from the project.
