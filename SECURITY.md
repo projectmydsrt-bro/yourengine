@@ -44,7 +44,12 @@ We kindly ask security researchers to follow **responsible disclosure practices*
 
 ---
 
+## 🔗 Related Policies
+For broader rules about releases, dependencies, and governance, please see our [Project Policy](./POLICY.md).
+
+---
+
 ## Contact
 For all security concerns, please reach out to:  
 📧 **security@dsrt.dev**  
-🌐 [dsrt.js GitHub Issues](https://github.com/projectmydsrt-bro/yourengine/issues) (for non-sensitive bugs)
+🌐 [GitHub Issues](https://github.com/projectmydsrt-bro/yourengine/issues) (for non-sensitive bugs)
