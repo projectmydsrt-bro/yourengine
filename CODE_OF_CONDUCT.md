@@ -1,67 +1,40 @@
-![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-ff69b4.svg)
-
-# Contributor Covenant Code of Conduct – dsrt.js
+# Contributor Covenant Code of Conduct
 
 ## Our Pledge
-We as members, contributors, and maintainers of **dsrt.js** pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We commit to acting and interacting in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
-
----
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers of **dsrt.js** pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
-Examples of behavior that contributes to a positive environment:
+
+Examples of behavior that contributes to creating a positive environment include:
+
 - Using welcoming and inclusive language  
-- Respecting differing viewpoints and experiences  
+- Being respectful of differing viewpoints and experiences  
 - Gracefully accepting constructive criticism  
 - Focusing on what is best for the community  
-- Showing empathy toward other members  
+- Showing empathy toward other community members
 
-Examples of unacceptable behavior:
-- Harassment, insults, or derogatory comments  
-- Trolling, flaming, or personal/political attacks  
-- Public or private harassment  
-- Publishing others’ private information without permission  
-- Any conduct inappropriate in a professional setting  
+Examples of unacceptable behavior by participants include:
 
----
+- Harassment, intimidation, or discrimination in any form  
+- Violent threats or language directed against another person  
+- Publishing others’ private information without explicit permission  
+- Any other conduct which could reasonably be considered inappropriate in a professional setting
 
 ## Enforcement Responsibilities
-- Project maintainers are responsible for clarifying standards of acceptable behavior.  
-- Maintainers have the right to remove or reject contributions not aligned with this Code.  
-- Maintainers may ban contributors temporarily or permanently for inappropriate behavior.  
 
----
+Project maintainers are responsible for clarifying standards of acceptable behavior and will take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct, or to ban temporarily or permanently any contributor for behaviors deemed inappropriate, threatening, offensive, or harmful.
+
+## Reporting
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at **security@dsrtjs.com**. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team maintains confidentiality for reporters.
 
 ## Scope
-This Code applies both within project spaces and in public spaces where an individual represents the project or community.
 
----
-
-## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting:  
-📧 **conduct@dsrt.dev**
-
-All complaints will be reviewed and investigated promptly and fairly.  
-Maintainers are obligated to respect the privacy of the reporter.  
-
----
-
-## Enforcement Guidelines
-1. **Correction** – Private feedback clarifying expected behavior.  
-2. **Warning** – Formal warning for continued misconduct.  
-3. **Temporary Ban** – Limited-time ban for serious or repeated violations.  
-4. **Permanent Ban** – Removal from community for severe violations.  
-
----
+This Code of Conduct applies both within project spaces and in public spaces when an individual represents the project or its community. Examples include using an official project e-mail address, posting via official social media, or acting as a representative at an event.  
 
 ## Attribution
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version **2.1**.
 
----
-
-## 🔗 Related Documents
-- 🤝 [Contributing Guide](./CONTRIBUTING.md)  
-- 📘 [Project Policy](./POLICY.md)  
-- 🔒 [Security Policy](./SECURITY.md)  
-- 📜 [License](./LICENSE)
+This Code of Conduct is adapted from the [Contributor Covenant, version 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html), available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
