@@ -1,64 +1,80 @@
-![Project Policy](https://img.shields.io/badge/Policy-DSRT-blue.svg)
+![Policy](https://img.shields.io/badge/Project-Policy-blue.svg)
 
-# dsrt.js Project Policy
+# Project Policy – dsrt.js
 
-This document defines the official policies for the **dsrt.js** project.
-
----
-
-## 📦 Release Policy
-- All releases follow **Semantic Versioning (SemVer)**:
-  - **MAJOR** – Breaking changes (v2.0.0 → v3.0.0).
-  - **MINOR** – Backward-compatible new features (v2.1.0).
-  - **PATCH** – Bug fixes and small improvements (v2.1.1).
-- Pre-release versions (`alpha`, `beta`, `rc`) may be unstable and not production-ready.
-- Releases are published on:
-  - **NPM**: [npmjs.com/package/dsrt](https://www.npmjs.com/package/dsrt)  
-  - **GitHub Releases**
+This document defines the governance, release, and dependency policies for **dsrt.js**.  
+It ensures consistency, stability, and security for both maintainers and contributors.
 
 ---
 
-## 🔒 Dependency Policy
-- Only **well-maintained, secure dependencies** are allowed.  
-- Dependencies are reviewed quarterly for:
-  - Known vulnerabilities (via GitHub Dependabot, npm audit).  
-  - License compliance (MIT, Apache 2.0, BSD, or compatible).  
-- Outdated or unmaintained dependencies will be replaced or removed.
+## 1. Release Policy
+- **Semantic Versioning (SemVer)** is used: `MAJOR.MINOR.PATCH`.
+- **Patch (x.y.z+1)** → Bug fixes or minor internal improvements.  
+- **Minor (x.y+1.0)** → New features added in a backward-compatible way.  
+- **Major (x+1.0.0)** → Breaking changes, announced in advance.  
+- Pre-releases are tagged as `alpha`, `beta`, or `rc`.
+
+### Release Process
+1. All changes must pass CI (build, lint, test).  
+2. A maintainer approves and merges into `main`.  
+3. GitHub Actions creates release notes and publishes to NPM.  
+4. Tags are pushed automatically (`vX.Y.Z`).  
 
 ---
 
-## 🛠️ Support Policy
-- Only the **latest stable release** is actively supported.  
-- Critical security issues may result in **out-of-band patches**.  
-- Older versions are not maintained unless explicitly marked as **LTS**.
+## 2. Dependency Policy
+- Dependencies must be:
+  - Actively maintained  
+  - MIT-compatible (or equally permissive)  
+  - Lightweight and secure  
+- Dependencies will be updated monthly using Dependabot.  
+- Deprecated or insecure dependencies are removed immediately.  
 
 ---
 
-## 🤝 Contribution Policy
-- All contributions must follow the [Contributing Guide](./CONTRIBUTING.md).  
-- Code must pass:
-  - ESLint + Prettier checks  
-  - TypeScript build (if applicable)  
-  - Unit and integration tests  
-- Pull Requests require **at least one maintainer review** before merging.  
+## 3. Governance Policy
+- **Core maintainers** are responsible for roadmap, releases, and final decisions.  
+- **Contributors** may submit Pull Requests, which must:
+  - Pass automated checks  
+  - Be reviewed by at least one maintainer  
+  - Follow [Contributing Guidelines](./CONTRIBUTING.md)  
+- Disputes are resolved by maintainer majority vote.  
 
 ---
 
-## 🧑‍⚖️ Governance Policy
-- **DSRT Core Team** maintains final decision-making authority.  
-- Community proposals are welcomed via **GitHub Discussions**.  
-- Voting may be used for large architectural changes (RFC process).  
+## 4. Security Policy
+All vulnerabilities are handled under the [Security Policy](./SECURITY.md).  
+Critical issues may result in an immediate out-of-band release.  
 
 ---
 
-## 📜 Licensing Policy
-- The entire project is licensed under [MIT License](./LICENSE).  
-- All contributions must be compatible with MIT.  
-- Contributors retain copyright over their code.
+## 5. Roadmap & Transparency
+- Roadmap is tracked in `ROADMAP.md` or GitHub Projects.  
+- Deprecated features will be announced **at least one minor release** in advance.  
+- Experimental features are marked as such until stable.  
 
 ---
 
-## 📩 Contact
-- General inquiries: **hello@dsrt.dev**  
-- Security issues: **security@dsrt.dev**  
-- Governance: **core@dsrt.dev**
+## 6. Documentation Policy
+- All public APIs must include JSDoc/TypeDoc comments.  
+- Documentation is generated automatically and published to `/docs`.  
+- Examples must be provided for new major features.  
+
+---
+
+## 7. Communication Channels
+- 📌 GitHub Issues → Bug reports & feature requests  
+- 💬 GitHub Discussions → Community proposals & Q&A  
+- 🔒 Security Email → Private vulnerability reports (`security@dsrt.dev`)  
+
+---
+
+## 🔗 Related Documents
+- 📜 [License](./LICENSE)  
+- 🔒 [Security Policy](./SECURITY.md)  
+- 🤝 [Contributing Guide](./CONTRIBUTING.md)  
+- 📏 [Code of Conduct](./CODE_OF_CONDUCT.md)  
+
+---
+
+© DSRT — Digital Smart Revise Technology. All rights reserved.
