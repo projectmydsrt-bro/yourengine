@@ -1,70 +1,32 @@
-![Security](https://img.shields.io/badge/Security-Policy-red.svg)
-
-# Security Policy – dsrt.js
-
-This document explains how security issues in **dsrt.js** are reported, reviewed, and resolved.  
-It is closely tied with our [Project Policy](./POLICY.md).
-
----
+# Security Policy
 
 ## Supported Versions
-Only the latest stable release of **dsrt.js** receives security updates.  
-Older versions are considered unsupported.
 
-| Version   | Supported |
-|-----------|-----------|
-| Latest    | ✅        |
-| < 1.0     | ❌        |
+This project follows a clear policy for security updates:
 
----
+- Only the latest stable version of dsrt.js is actively maintained for security fixes.
+- Older versions may not receive patches; users are encouraged to upgrade.
 
 ## Reporting a Vulnerability
-If you discover a vulnerability in **dsrt.js**:
 
-1. **Do not** open a public GitHub issue.  
-2. Contact us via **security@dsrt.dev** or GitHub private advisories.  
-3. Include detailed information:
-   - Steps to reproduce  
-   - Affected version(s)  
-   - Suggested fixes (if available)  
+If you discover a security vulnerability, please report it privately:
 
-We commit to responding within **72 hours**. Critical issues may trigger an immediate hotfix release.
+- Contact: **security@dsrtjs.com**
+- Provide a detailed description, steps to reproduce, and potential impact.
+- Do not disclose the vulnerability publicly until it is patched.
 
----
+## Response
 
-## Responsible Disclosure
-We ask all security researchers to follow **responsible disclosure** principles:
-- Report privately first.  
-- Allow maintainers reasonable time to release a fix.  
-- Do not exploit vulnerabilities in production.  
+Once a report is received:
 
----
+1. The security team will acknowledge receipt within 24 hours.
+2. The issue will be investigated and prioritized based on severity.
+3. A fix will be developed and released.
+4. Public disclosure will be coordinated to ensure users can upgrade safely.
 
-## Maintainer Responsibilities
-- Review incoming reports promptly.  
-- Prioritize severity according to CVSS scoring.  
-- Patch and release fixes as fast as possible.  
-- Document resolved issues transparently in release notes.  
+## Best Practices
 
----
-
-## Security Best Practices
-Users of **dsrt.js** should:
-- Always use the latest release.  
-- Validate and sanitize user inputs.  
-- Load assets only from trusted sources.  
-- Keep dependencies up to date.  
-
----
-
-## 🔗 Related Policies
-- 📘 [Project Policy](./POLICY.md) – Governance, release, and dependency rules  
-- 📜 [License](./LICENSE)  
-- 🤝 [Contributing Guide](./CONTRIBUTING.md)  
-- 📏 [Code of Conduct](./CODE_OF_CONDUCT.md)  
-
----
-
-## Contact
-📧 **security@dsrt.dev**  
-🌐 [GitHub Security Advisories](https://github.com/projectmydsrt-bro/yourengine/security/advisories)
+- All external dependencies are monitored for vulnerabilities.
+- Loader system validates and sanitizes all external 3D models and assets.
+- Shader code runs in a sandboxed environment to prevent malicious execution.
+- Regular audits and automated CI/CD checks ensure security compliance.
