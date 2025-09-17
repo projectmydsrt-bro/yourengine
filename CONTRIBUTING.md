@@ -1,107 +1,141 @@
 ![Contributing](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
-# Contributing to dsrt.js
+# Contributing Guide – dsrt.js
 
-First of all, thank you for considering contributing to **dsrt.js** 🎉.  
-Your help is essential for keeping this project modern, secure, and useful to the community.
+Thank you for your interest in contributing to **dsrt.js**!  
+We welcome contributions from the community and aim to maintain a transparent, inclusive process.
 
 ---
 
-## How Can You Contribute?
+## 1. Ways to Contribute
+- 🐛 **Bug Reports** → Open a GitHub Issue with clear steps to reproduce.  
+- 💡 **Feature Requests** → Suggest improvements via Issues or Discussions.  
+- 🛠️ **Code Contributions** → Submit Pull Requests following this guide.  
+- 📖 **Docs & Examples** → Help improve documentation and demos.  
 
-### 🐛 Reporting Bugs
-- Use the [GitHub Issues](https://github.com/projectmydsrt-bro/yourengine/issues) page.  
-- Provide a **clear description** and, if possible, **a minimal reproduction**.  
-- Always mention your **browser / Node.js version** and **dsrt.js version**.
+---
 
-### 💡 Suggesting Enhancements
-- Open a **feature request issue** with the `enhancement` label.  
-- Describe the problem your suggestion solves.  
-- If possible, provide **pseudo-code or references** from other engines (like Three.js).
-
-### 🔧 Pull Requests
-1. Fork the repo & create a new branch:  
+## 2. Development Setup
+1. Fork the repository:  
    ```bash
-   git checkout -b feature/your-feature
+   git clone https://github.com/<your-username>/yourengine.git
+   cd yourengine
+   npm install
 
-2. Make your changes (keep commits clean and logical).
+2. Start development build:
 
-
-3. Run tests & lint before committing:
-
-npm run lint && npm test
-
-
-4. Submit a Pull Request with:
-
-A descriptive title
-
-Clear explanation of the changes
-
-Reference to related issue(s)
+npm run dev
 
 
+3. Run tests before pushing:
 
-
-
----
-
-Development Setup
-
-# Clone your fork
-git clone https://github.com/<your-username>/yourengine.git
-cd yourengine
-
-# Install dependencies
-npm install
-
-# Build the library
-npm run build
-
-# Run tests
 npm test
 
 
+
+
 ---
 
-Code Guidelines
+3. Branching Model
+
+main → stable release branch.
+
+dev → active development branch.
+
+Feature branches:
+
+feature/<name> for new features
+
+fix/<issue> for bug fixes
+
+
+
+
+---
+
+4. Commit Convention
+
+We follow Conventional Commits for clear history:
+
+<type>(scope): description
+
+Examples:
+
+fix(renderer): handle null material
+
+feat(loader): add GLTF Draco compression
+
+docs(api): improve Camera usage docs
+
+test(math): add vector normalization tests
+
+
+Types: feat, fix, docs, style, refactor, test, chore.
+
+
+---
+
+5. Pull Request Process
+
+1. Ensure your branch is up to date with dev.
+
+
+2. Make sure all tests and lint checks pass.
+
+
+3. Add/update documentation for your changes.
+
+
+4. Submit a Pull Request → template will guide you.
+
+
+5. At least one maintainer review is required before merge.
+
+
+
+
+---
+
+6. Code Style
+
+TypeScript preferred (.ts).
 
 Follow ESLint + Prettier rules (configured in repo).
 
-Write in TypeScript (where possible).
+Use JSDoc/TypeDoc for public API documentation.
 
-Keep modules modular & tree-shakable.
-
-Add/Update tests for every new feature or fix.
-
-Document new APIs in /docs.
+Keep code modular, small, and testable.
 
 
 
 ---
 
-Community Standards
+7. Tests
 
-By contributing, you agree to follow our Code of Conduct.
-Please keep all discussions respectful, constructive, and professional.
+All new features must include test coverage.
 
+Use Vitest/Jest for unit and integration tests.
 
----
+Run npm test before pushing.
 
-Recognition
-
-All contributors will be listed in the Contributors section of README.md.
-We may also highlight top contributors in release notes 🚀.
 
 
 ---
 
-Questions?
+8. Contributor Behavior
 
-If you have any questions, feel free to:
+All contributors are expected to follow the Code of Conduct.
+Harassment, disrespect, or toxicity will not be tolerated.
 
-Open a Discussion on GitHub
 
-Join our community chat (planned for the future: Discord/Matrix)
+---
 
-Or email us directly at dev@dsrt.dev
+🔗 Related Documents
+
+📏 Code of Conduct
+
+📘 Project Policy
+
+🔒 Security Policy
+
+📜 License
