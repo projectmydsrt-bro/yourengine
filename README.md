@@ -1,84 +1,79 @@
 # dsrt.js
 
-![Build](https://img.shields.io/github/actions/workflow/status/projectmydsrt-bro/yourengine/ci.yml?branch=main)
-![Version](https://img.shields.io/npm/v/dsrt.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Security](https://img.shields.io/badge/Security-Policy-red.svg)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
-![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-ff69b4.svg)
-
-> **dsrt.js** — A modern JavaScript 3D engine powered by WebGL2/WebGPU.  
-> Built to be modular, performant, and ready for the next generation of the web.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Security Policy](https://img.shields.io/badge/security-policy-4b8bbe.svg)](SECURITY.md)
+[![Policy](https://img.shields.io/badge/policy-project-4b8bbe.svg)](POLICY.md)
+[![Contributing](https://img.shields.io/badge/contributing-guidelines-4b8bbe.svg)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-4b8bbe.svg)](CODE_OF_CONDUCT.md)
 
 ---
 
-## ✨ Features
-- 🚀 **Modern Rendering** — WebGL2 with WebGPU fallback.  
-- 📦 **Modular Design** — ES Modules & Tree-shakable imports.  
-- 🎨 **PBR Materials** — Physically-based rendering built-in.  
-- 📂 **Asset Support** — glTF 2.0, HDRI, KTX2 compressed textures.  
-- 🧩 **Extendable** — Custom renderers, shaders, and controls.  
-- 🛡 **Secure** — Strict security policy and vetted dependencies.  
-- 🧑‍💻 **Developer Friendly** — TypeScript definitions, docs, and examples.  
+## Overview
+
+**dsrt.js** is a modern, lightweight, and secure 3D rendering engine designed as an evolution beyond traditional libraries.  
+It focuses on performance, modularity, and safety, with built-in support for loaders, materials, lights, physics integration, and WebGPU-ready rendering.
 
 ---
 
-## 📦 Installation
+## Features
 
-### NPM
+- 📦 Modular architecture (Engine → Scene → Renderer → Loader)  
+- 🎨 Materials, lights, geometries, cameras, and animation system  
+- 🔒 Security-first (sandboxed shaders, safe loaders, dependency audits)  
+- ⚡ WebGL2 + WebGPU experimental backend  
+- 🧪 Comprehensive testing with CI/CD integration  
+- 📖 Full documentation and examples  
+
+---
+
+## Installation
+
 ```bash
-npm install dsrt
+npm install dsrt.js
 
-CDN (ESM)
+or via Yarn:
 
-<script type="module">
-  import { Scene, PerspectiveCamera, WebGLRenderer } from "https://cdn.jsdelivr.net/npm/dsrt@latest/dist/dsrt.module.js";
+yarn add dsrt.js
 
-  const scene = new Scene();
-  const camera = new PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-  const renderer = new WebGLRenderer();
-  document.body.appendChild(renderer.domElement);
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
+---
+
+Usage Example
+
+import { Engine, Scene, PerspectiveCamera, BoxGeometry, Mesh, Renderer } from "dsrt.js";
+
+const engine = new Engine();
+const scene = new Scene();
+
+const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.z = 5;
+
+const box = new Mesh(new BoxGeometry(1, 1, 1));
+scene.add(box);
+
+const renderer = new Renderer({ canvas: document.querySelector("#app") });
+engine.run(() => {
   renderer.render(scene, camera);
-</script>
+});
 
 
 ---
 
-📖 Documentation
+Contributing
 
-Full API reference and guides are available in the docs folder.
-(Planned website: https://dsrt.dev)
-
-
----
-
-🤝 Contributing
-
-We welcome all contributions!
-See our Contributing Guide and Code of Conduct.
+We welcome contributions! Please read our Contributing Guidelines and Code of Conduct before submitting pull requests.
 
 
 ---
 
-🔒 Security
+Security
 
 Please review our Security Policy for reporting vulnerabilities.
+Contact: security@dsrtjs.com
 
 
 ---
 
-📜 License
+License
 
-
-Licensed under the MIT License.
-
-
----
-
-🌟 Acknowledgements
-
-Built with ❤️ by DSRT.
-
-Thanks to the open-source community for inspiration and collaboration.
+This project is licensed under the MIT License.
