@@ -30,8 +30,3 @@ For quick prototyping, DSRT is also available via a CDN:
 
   console.log("DSRT version:", DSRT.VERSION);
 </script>
-
-
----
-
-✅ You are now ready to create your first scene. Continue with Hello World.
