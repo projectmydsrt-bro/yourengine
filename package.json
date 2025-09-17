@@ -1,0 +1,39 @@
+{
+  "name": "dsrt.js",
+  "version": "0.1.0",
+  "description": "A modern, modular, and secure 3D rendering engine for the web, WebGL2 and WebGPU-ready.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectmydsrt-bro/dsrt.js.git"
+  },
+  "keywords": [
+    "3d",
+    "webgl",
+    "webgpu",
+    "engine",
+    "typescript",
+    "modular"
+  ],
+  "author": "DSRT Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/projectmydsrt-bro/dsrt.js/issues"
+  },
+  "homepage": "https://github.com/projectmydsrt-bro/dsrt.js#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vitest": "^1.6.7",
+    "eslint": "^8.47.0",
+    "@types/node": "^20.6.1"
+  },
+  "dependencies": {}
+}
